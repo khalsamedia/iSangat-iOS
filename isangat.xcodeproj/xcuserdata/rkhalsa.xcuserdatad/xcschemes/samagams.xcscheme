@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D873C27519884C2A0019E176"
-               BuildableName = "samagams.app"
-               BlueprintName = "samagams"
-               ReferencedContainer = "container:samagams.xcodeproj">
+               BuildableName = "isangat.app"
+               BlueprintName = "isangat"
+               ReferencedContainer = "container:isangat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D873C29019884C2A0019E176"
-               BuildableName = "samagamsTests.xctest"
-               BlueprintName = "samagamsTests"
-               ReferencedContainer = "container:samagams.xcodeproj">
+               BuildableName = "isangatTests.xctest"
+               BlueprintName = "isangatTests"
+               ReferencedContainer = "container:isangat.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D873C27519884C2A0019E176"
-            BuildableName = "samagams.app"
-            BlueprintName = "samagams"
-            ReferencedContainer = "container:samagams.xcodeproj">
+            BuildableName = "isangat.app"
+            BlueprintName = "isangat"
+            ReferencedContainer = "container:isangat.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D873C27519884C2A0019E176"
-            BuildableName = "samagams.app"
-            BlueprintName = "samagams"
-            ReferencedContainer = "container:samagams.xcodeproj">
+            BuildableName = "isangat.app"
+            BlueprintName = "isangat"
+            ReferencedContainer = "container:isangat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D873C27519884C2A0019E176"
-            BuildableName = "samagams.app"
-            BlueprintName = "samagams"
-            ReferencedContainer = "container:samagams.xcodeproj">
+            BuildableName = "isangat.app"
+            BlueprintName = "isangat"
+            ReferencedContainer = "container:isangat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

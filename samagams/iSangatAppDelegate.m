@@ -7,13 +7,26 @@
 //
 
 #import "iSangatAppDelegate.h"
+#import "iSangatSamagamViewController.h"
+#import "iSangatDetailViewController.h"
 
 @implementation iSangatAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    iSangatSamagamViewController *samagamVC = [[iSangatSamagamViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *masterNav = [[UINavigationController alloc] initWithRootViewController:samagamVC];
+    
+  //  iSangatDetailViewController *detailVC = [[iSangatDetailViewController alloc] init];
+    //samagamVC.detailViewController = detailVC;
+    
+    
+   // self.window.rootViewController = samagamVC;
+    self.window.rootViewController = masterNav;
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
