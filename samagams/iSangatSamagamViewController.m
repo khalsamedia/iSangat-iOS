@@ -12,6 +12,7 @@
 #import "iSangatDetailViewController.h"
 #import "iSangatRecordingsController.h"
 #import "iSangatItemCell.h"
+#import "iSangatNotificationManager.h"
 
 @interface iSangatSamagamViewController() <NSURLSessionDataDelegate>
 
@@ -60,7 +61,7 @@
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&jsonError];
     NSArray* allPrograms = json[@"programs"];
     
-    NSMutableArray *samagamsCopy = [[NSMutableArray alloc] initWithCapacity: 0];
+    NSMutableArray *samagamsCopy = [[NSMutableArray alloc] initWithCapacity: [allPrograms count]];
     
     for (NSDictionary* program in allPrograms) {
         @try {
@@ -87,10 +88,13 @@
             continue;
 
         }
-        
-        _samagams = samagamsCopy;
-        [[self tableView] reloadData];
     }
+    
+    [[[iSangatNotificationManager alloc] init] scheduleNotifications:samagamsCopy];
+    
+    _samagams = samagamsCopy;
+    [[self tableView] reloadData];
+
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

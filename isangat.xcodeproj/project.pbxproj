@@ -12,6 +12,7 @@
 		D85B17381AB61F4800883010 /* iSangatItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D85B17371AB61F4800883010 /* iSangatItemCell.m */; };
 		D85B173A1AB63B1300883010 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = D85B17391AB63B1300883010 /* phone.png */; };
 		D85B173E1ABA927C00883010 /* iSangatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85B173D1ABA927C00883010 /* iSangatDetailViewController.m */; };
+		D85B17411ABC9E5D00883010 /* iSangatNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D85B17401ABC9E5D00883010 /* iSangatNotificationManager.m */; };
 		D873C27A19884C2A0019E176 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D873C27919884C2A0019E176 /* Foundation.framework */; };
 		D873C27C19884C2A0019E176 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D873C27B19884C2A0019E176 /* CoreGraphics.framework */; };
 		D873C27E19884C2A0019E176 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D873C27D19884C2A0019E176 /* UIKit.framework */; };
@@ -53,6 +54,8 @@
 		D85B173B1ABA919D00883010 /* iSangatSamagamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSangatSamagamViewController.h; sourceTree = "<group>"; };
 		D85B173C1ABA927C00883010 /* iSangatDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSangatDetailViewController.h; sourceTree = "<group>"; };
 		D85B173D1ABA927C00883010 /* iSangatDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iSangatDetailViewController.m; sourceTree = "<group>"; };
+		D85B173F1ABC9E5D00883010 /* iSangatNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSangatNotificationManager.h; sourceTree = "<group>"; };
+		D85B17401ABC9E5D00883010 /* iSangatNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iSangatNotificationManager.m; sourceTree = "<group>"; };
 		D873C27619884C2A0019E176 /* isangat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = isangat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D873C27919884C2A0019E176 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D873C27B19884C2A0019E176 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,6 +163,8 @@
 				D85B17341AB61F1E00883010 /* iSangatItemCell.xib */,
 				D85B17361AB61F4700883010 /* iSangatItemCell.h */,
 				D85B17371AB61F4800883010 /* iSangatItemCell.m */,
+				D85B173F1ABC9E5D00883010 /* iSangatNotificationManager.h */,
+				D85B17401ABC9E5D00883010 /* iSangatNotificationManager.m */,
 			);
 			path = samagams;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 				D873C28619884C2A0019E176 /* main.m in Sources */,
 				D85B173E1ABA927C00883010 /* iSangatDetailViewController.m in Sources */,
 				D85B17381AB61F4800883010 /* iSangatItemCell.m in Sources */,
+				D85B17411ABC9E5D00883010 /* iSangatNotificationManager.m in Sources */,
 				D873C2AA19884FDD0019E176 /* iSangatSamagamViewController.m in Sources */,
 				D8237B451AAD8B5400E9AB34 /* iSangatSamagam2.m in Sources */,
 				D873C2B219886B820019E176 /* TFHpple.m in Sources */,
