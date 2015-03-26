@@ -259,6 +259,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = isangat;
 				TargetAttributes = {
+					D873C27519884C2A0019E176 = {
+						DevelopmentTeam = 8TRPBB426T;
+					};
 					D873C29019884C2A0019E176 = {
 						TestTargetID = D873C27519884C2A0019E176;
 					};
@@ -448,6 +451,7 @@
 					"$(SDKROOT)/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = "samagams/isangat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = isangat;
 				WRAPPER_EXTENSION = app;
 			};
@@ -466,6 +470,7 @@
 					"$(SDKROOT)/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = "samagams/isangat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = isangat;
 				WRAPPER_EXTENSION = app;
 			};

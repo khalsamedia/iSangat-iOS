@@ -65,7 +65,7 @@
 
 - (UILocalNotification*) createReminderNotification {
     UILocalNotification *notification = [[UILocalNotification alloc] init];
-    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     
     NSDate* nextReminderDate = [[NSDate date] dateByAddingTimeInterval:[self daysFromNextFriday]*24*60*60];
     notification.fireDate = nextReminderDate;
@@ -85,9 +85,9 @@
 
 - (NSInteger) daysFromNextFriday  {
    
-    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateComponents *comps = [gregorian components:NSWeekdayCalendarUnit fromDate:[NSDate date]];
-    int weekday = [comps weekday];
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *comps = [gregorian components:NSCalendarUnitWeekday fromDate:[NSDate date]];
+    NSInteger weekday = [comps weekday];
     
     //Friday = 5
     return 14 + (5 - weekday);

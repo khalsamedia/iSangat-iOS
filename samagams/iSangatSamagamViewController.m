@@ -14,7 +14,7 @@
 #import "iSangatItemCell.h"
 #import "iSangatNotificationManager.h"
 
-@interface iSangatSamagamViewController() <NSURLSessionDataDelegate>
+@interface iSangatSamagamViewController() <NSURLSessionDataDelegate, MFMailComposeViewControllerDelegate>
 
 @property NSMutableArray *samagams;
 
@@ -108,8 +108,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     iSangatItemCell *cell = [tableView dequeueReusableCellWithIdentifier:@"iSangatItemCell" forIndexPath:indexPath];
   
-    UIView *cellContentView = cell.contentView;
-    
     iSangatSamagam2 *samagam = [_samagams objectAtIndex:indexPath.row];
     
     cell.titleLabel.text = samagam.title;
@@ -129,12 +127,6 @@
     } else {
         cell.backgroundColor = [UIColor whiteColor];
     }
-    
-    
-    [cellContentView addSubview:cell.titleLabel];
-    [cellContentView addSubview:cell.subTitleLabel];
-    [cellContentView addSubview:cell.directionsButton];
-    [cellContentView addSubview:cell.phoneButton]; 
     
     return  cell;
 }
@@ -169,14 +161,13 @@
 }
 
 -(IBAction)sendEmail  :(id)sender {
-    //Change to sevaa@isangat.org
-    [self sendEmailTo:@"ravneet_ee@yahoo.com"];
+    [self sendEmailTo:@"sevaa@isangat.org"];
 }
 
 -(void)sendEmailTo:(NSString*) to {
     if([MFMailComposeViewController canSendMail]) {
         MFMailComposeViewController *mailComposeVC = [[MFMailComposeViewController alloc] init];
-        mailComposeVC.delegate = self;
+        mailComposeVC.mailComposeDelegate = self;
         [mailComposeVC setSubject:@"Waheguru"];
         [mailComposeVC setToRecipients:[NSArray arrayWithObject:to]];
         [mailComposeVC setMessageBody:@"Waheguru ji kaa Khalsa Waheguru ji kee Fateh" isHTML:NO];

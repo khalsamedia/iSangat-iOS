@@ -28,7 +28,7 @@
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
         NSCalendar *gregorian = [[NSCalendar alloc]
-                                 initWithCalendarIdentifier:NSGregorianCalendar];
+                                 initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
         [dateFormatter setCalendar:gregorian];
         self.startDate = [dateFormatter dateFromString:startDate];
         self.endDate = [dateFormatter dateFromString:endDate];
@@ -43,20 +43,21 @@
 }
 
 - (NSString*) formatPhone : (NSString*) phone {
-    return [phone stringByAddingPercentEscapesUsingEncoding:NSUnicodeStringEncoding];
+    //return [phone stringByAddingPercentEscapesUsingEncoding:NSUnicodeStringEncoding];
+    return phone;
 }
 
 - (NSString*) displayDate : (NSDate*) startDate
                    endDate: (NSDate*) endDate {
     
     NSCalendar *gregorian = [[NSCalendar alloc]
-                             initWithCalendarIdentifier:NSGregorianCalendar];
+                             initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     
-    NSCalendarUnit units = NSYearCalendarUnit |
-    NSMonthCalendarUnit |
-    NSDayCalendarUnit |
-    NSHourCalendarUnit |
-    NSMinuteCalendarUnit;
+    NSCalendarUnit units = NSCalendarUnitYear |
+    NSCalendarUnitMonth |
+    NSCalendarUnitDay |
+    NSCalendarUnitHour |
+    NSCalendarUnitMinute;
     NSDateComponents *startDateComponents = [gregorian components:units fromDate:startDate];
     NSDateComponents *endDateComponents = [gregorian components:units fromDate:endDate];
     
