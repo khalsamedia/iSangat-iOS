@@ -38,12 +38,36 @@
     return self;
 }
 
+
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [coder encodeObject:self.id forKey:@"id"];
+    [coder encodeObject:self.title forKey:@"title"];
+    [coder encodeObject:self.subTitle forKey:@"subTitle"];
+    [coder encodeObject:self.address forKey:@"address"];
+    [coder encodeObject:self.phone forKey:@"phone"];
+    [coder encodeObject:self.startDate forKey:@"startDate"];
+    [coder encodeObject:self.endDate forKey:@"endDate"];
+    [coder encodeObject:self.displayDate forKey:@"displayDate"];
+}
+
+- (id)initWithCoder:(NSCoder *)coder {
+    self = [self init];
+    self.id = [coder decodeObjectForKey:@"id"];
+    self.title = [coder decodeObjectForKey:@"title"];
+    self.subTitle = [coder decodeObjectForKey:@"subTitle"];
+    self.address = [coder decodeObjectForKey:@"address"];
+    self.phone = [coder decodeObjectForKey:@"phone"];
+    self.startDate = [coder decodeObjectForKey:@"startDate"];
+    self.endDate = [coder decodeObjectForKey:@"endDate"];
+    self.displayDate = [coder decodeObjectForKey:@"displayDate"];
+    return self;
+}
+
 - (NSString*) formatMapUrl : (NSString*) url {
     return [url stringByReplacingOccurrencesOfString:@" " withString:@"+"];
 }
 
 - (NSString*) formatPhone : (NSString*) phone {
-    //return [phone stringByAddingPercentEscapesUsingEncoding:NSUnicodeStringEncoding];
     return phone;
 }
 
@@ -83,5 +107,6 @@
     [startDate day] == [endDate day];
     
 }
+
 
 @end

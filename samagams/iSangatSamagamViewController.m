@@ -57,6 +57,12 @@
     NSURL *url = [NSURL URLWithString:iSangatUrl];
     NSData *jsonData = [NSData dataWithContentsOfURL:url];
     
+    if (jsonData == nil) {
+        // we are offline
+        [self loadOfflineSamagams];
+        return;
+    }
+    
     NSError *jsonError;
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&jsonError];
     NSArray* allPrograms = json[@"programs"];
@@ -93,6 +99,7 @@
     [[[iSangatNotificationManager alloc] init] scheduleNotifications:samagamsCopy];
     
     _samagams = samagamsCopy;
+    [self saveSamagams];
     [[self tableView] reloadData];
 
 }
@@ -193,6 +200,35 @@
     UINib *nib = [UINib nibWithNibName:@"iSangatItemCell" bundle:nil];
     
     [self.tableView registerNib:nib forCellReuseIdentifier:@"iSangatItemCell"];
+}
+
+- (void) saveSamagams {
+    NSMutableDictionary *dataDict = [[NSMutableDictionary alloc] initWithCapacity:3];
+    if (self.samagams != nil) {
+        [dataDict setObject:_samagams forKey:@"samagams"];  // save the games array
+    }
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectoryPath = [paths objectAtIndex:0];
+    NSString *filePath = [documentsDirectoryPath stringByAppendingPathComponent:@"appData"];
+    
+    [NSKeyedArchiver archiveRootObject:dataDict toFile:filePath];
+}
+
+- (void) loadOfflineSamagams {
+    // look for saved data.
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectoryPath = [paths objectAtIndex:0];
+    NSString *filePath = [documentsDirectoryPath stringByAppendingPathComponent:@"appData"];
+    
+    if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+        NSData *data = [NSData dataWithContentsOfFile:filePath];
+        NSDictionary *savedData = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        
+        if ([savedData objectForKey:@"samagams"] != nil) {
+            self.samagams = [[NSMutableArray alloc] initWithArray:[savedData objectForKey:@"samagams"]];
+        }
+    }
 }
 
 

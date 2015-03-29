@@ -16,14 +16,16 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)])
+    {
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil]];
+    }
+    #endif
+    
     iSangatSamagamViewController *samagamVC = [[iSangatSamagamViewController alloc] initWithStyle:UITableViewStylePlain];
     UINavigationController *masterNav = [[UINavigationController alloc] initWithRootViewController:samagamVC];
     
-  //  iSangatDetailViewController *detailVC = [[iSangatDetailViewController alloc] init];
-    //samagamVC.detailViewController = detailVC;
-    
-    
-   // self.window.rootViewController = samagamVC;
     self.window.rootViewController = masterNav;
     
     

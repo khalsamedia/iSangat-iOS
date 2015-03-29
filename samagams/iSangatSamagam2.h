@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface iSangatSamagam2 : NSObject
+@interface iSangatSamagam2 : NSObject <NSCoding>
 
 @property (nonatomic, copy) NSString *id;
 @property (nonatomic, copy) NSString *title;

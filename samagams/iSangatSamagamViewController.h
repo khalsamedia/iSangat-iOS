@@ -12,7 +12,4 @@
 
 @interface iSangatSamagamViewController : UITableViewController
 
-
-//@property (nonatomic) iSangatDetailViewController *detailViewController;
-
 @end
