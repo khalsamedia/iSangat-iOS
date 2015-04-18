@@ -8,8 +8,14 @@
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>iSangat-76.png</string>
+		<string>iSangat-120.png</string>
+		<string>iSangat-152.png</string>
+	</array>
 	<key>CFBundleIdentifier</key>
-	<string>org.isangat.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>8TRPBB426T.org.isangat</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

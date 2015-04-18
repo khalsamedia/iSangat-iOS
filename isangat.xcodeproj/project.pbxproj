@@ -32,6 +32,9 @@
 		D873C2B619886CAC0019E176 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D873C2B519886CAC0019E176 /* libxml2.dylib */; };
 		D873C2BE1992EC630019E176 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D873C2BD1992EC630019E176 /* MessageUI.framework */; };
 		D873C2C11992F09E0019E176 /* iSangatRecordingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D873C2C01992F09E0019E176 /* iSangatRecordingsController.m */; };
+		D87AB57E1AD0689700537EF3 /* iSangat-76.png in Resources */ = {isa = PBXBuildFile; fileRef = D87AB57B1AD0689700537EF3 /* iSangat-76.png */; };
+		D87AB57F1AD0689700537EF3 /* iSangat-120.png in Resources */ = {isa = PBXBuildFile; fileRef = D87AB57C1AD0689700537EF3 /* iSangat-120.png */; };
+		D87AB5801AD0689700537EF3 /* iSangat-152.png in Resources */ = {isa = PBXBuildFile; fileRef = D87AB57D1AD0689700537EF3 /* iSangat-152.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +59,7 @@
 		D85B173D1ABA927C00883010 /* iSangatDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iSangatDetailViewController.m; sourceTree = "<group>"; };
 		D85B173F1ABC9E5D00883010 /* iSangatNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSangatNotificationManager.h; sourceTree = "<group>"; };
 		D85B17401ABC9E5D00883010 /* iSangatNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iSangatNotificationManager.m; sourceTree = "<group>"; };
-		D873C27619884C2A0019E176 /* isangat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = isangat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D873C27619884C2A0019E176 /* iSangat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSangat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D873C27919884C2A0019E176 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D873C27B19884C2A0019E176 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D873C27D19884C2A0019E176 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -83,6 +86,9 @@
 		D873C2BD1992EC630019E176 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D873C2BF1992F09E0019E176 /* iSangatRecordingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSangatRecordingsController.h; sourceTree = "<group>"; };
 		D873C2C01992F09E0019E176 /* iSangatRecordingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iSangatRecordingsController.m; sourceTree = "<group>"; };
+		D87AB57B1AD0689700537EF3 /* iSangat-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iSangat-76.png"; path = "../../../../Downloads/iSangat-76.png"; sourceTree = "<group>"; };
+		D87AB57C1AD0689700537EF3 /* iSangat-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iSangat-120.png"; path = "../../../../Downloads/iSangat-120.png"; sourceTree = "<group>"; };
+		D87AB57D1AD0689700537EF3 /* iSangat-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iSangat-152.png"; path = "../../../../Downloads/iSangat-152.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +131,7 @@
 		D873C27719884C2A0019E176 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D873C27619884C2A0019E176 /* isangat.app */,
+				D873C27619884C2A0019E176 /* iSangat.app */,
 				D873C29119884C2A0019E176 /* isangatTests.xctest */,
 			);
 			name = Products;
@@ -147,6 +153,9 @@
 		D873C27F19884C2A0019E176 /* samagams */ = {
 			isa = PBXGroup;
 			children = (
+				D87AB57B1AD0689700537EF3 /* iSangat-76.png */,
+				D87AB57C1AD0689700537EF3 /* iSangat-120.png */,
+				D87AB57D1AD0689700537EF3 /* iSangat-152.png */,
 				D85B173C1ABA927C00883010 /* iSangatDetailViewController.h */,
 				D85B173D1ABA927C00883010 /* iSangatDetailViewController.m */,
 				D85B17391AB63B1300883010 /* phone.png */,
@@ -228,7 +237,7 @@
 			);
 			name = isangat;
 			productName = samagams;
-			productReference = D873C27619884C2A0019E176 /* isangat.app */;
+			productReference = D873C27619884C2A0019E176 /* iSangat.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D873C29019884C2A0019E176 /* isangatTests */ = {
@@ -293,7 +302,10 @@
 				D873C28419884C2A0019E176 /* InfoPlist.strings in Resources */,
 				D873C28C19884C2A0019E176 /* Images.xcassets in Resources */,
 				D85B173A1AB63B1300883010 /* phone.png in Resources */,
+				D87AB57F1AD0689700537EF3 /* iSangat-120.png in Resources */,
+				D87AB57E1AD0689700537EF3 /* iSangat-76.png in Resources */,
 				D85B17351AB61F1E00883010 /* iSangatItemCell.xib in Resources */,
+				D87AB5801AD0689700537EF3 /* iSangat-152.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,8 +453,10 @@
 		D873C2A319884C2A0019E176 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALTERNATE_GROUP = rkhalsa;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "samagams/isangat-Prefix.pch";
 				"HEADER_SEARCH_PATHS[arch=*]" = (
@@ -451,8 +465,10 @@
 					"$(SDKROOT)/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = "samagams/isangat-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = isangat;
+				INSTALL_GROUP = admin;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = iSangat;
+				PROVISIONING_PROFILE = "a32cae5e-72dd-466d-8b1e-f6e930336e9c";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -460,8 +476,11 @@
 		D873C2A419884C2A0019E176 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALTERNATE_GROUP = rkhalsa;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "samagams/isangat-Prefix.pch";
 				"HEADER_SEARCH_PATHS[arch=*]" = (
@@ -470,8 +489,10 @@
 					"$(SDKROOT)/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = "samagams/isangat-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = isangat;
+				INSTALL_GROUP = admin;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = iSangat;
+				PROVISIONING_PROFILE = "a32cae5e-72dd-466d-8b1e-f6e930336e9c";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

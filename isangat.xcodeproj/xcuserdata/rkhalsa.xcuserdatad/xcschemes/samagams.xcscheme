@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D873C27519884C2A0019E176"
-               BuildableName = "isangat.app"
+               BuildableName = "iSangat.app"
                BlueprintName = "isangat"
                ReferencedContainer = "container:isangat.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D873C27519884C2A0019E176"
-            BuildableName = "isangat.app"
+            BuildableName = "iSangat.app"
             BlueprintName = "isangat"
             ReferencedContainer = "container:isangat.xcodeproj">
          </BuildableReference>
@@ -58,11 +58,12 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D873C27519884C2A0019E176"
-            BuildableName = "isangat.app"
+            BuildableName = "iSangat.app"
             BlueprintName = "isangat"
             ReferencedContainer = "container:isangat.xcodeproj">
          </BuildableReference>
@@ -76,11 +77,12 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D873C27519884C2A0019E176"
-            BuildableName = "isangat.app"
+            BuildableName = "iSangat.app"
             BlueprintName = "isangat"
             ReferencedContainer = "container:isangat.xcodeproj">
          </BuildableReference>
