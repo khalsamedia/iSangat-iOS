@@ -123,8 +123,11 @@
     
     cell.directionsButton.tag = indexPath.row;
     cell.phoneButton.tag = indexPath.row;
+
+    [cell bringSubviewToFront:cell.directionsButton];
+    [cell bringSubviewToFront:cell.phoneButton];
     
-    [cell.directionsButton addTarget:self action:@selector(directions:) forControlEvents:UIControlEventTouchDown];
+    [cell.directionsButton addTarget:self action:@selector(directions:) forControlEvents:UIControlEventTouchUpInside];
     [cell.phoneButton addTarget:self action:@selector(call:) forControlEvents:UIControlEventTouchUpInside];
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
