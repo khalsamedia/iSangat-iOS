@@ -116,7 +116,7 @@
     iSangatItemCell *cell = [tableView dequeueReusableCellWithIdentifier:@"iSangatItemCell" forIndexPath:indexPath];
   
     iSangatSamagam2 *samagam = [_samagams objectAtIndex:indexPath.row];
-    
+
     cell.titleLabel.text = samagam.title;
     cell.subTitleLabel.text = samagam.subTitle;
     cell.dateLabel.text = samagam.displayDate;
@@ -124,7 +124,7 @@
     cell.directionsButton.tag = indexPath.row;
     cell.phoneButton.tag = indexPath.row;
     
-    [cell.directionsButton addTarget:self action:@selector(directions:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.directionsButton addTarget:self action:@selector(directions:) forControlEvents:UIControlEventTouchDown];
     [cell.phoneButton addTarget:self action:@selector(call:) forControlEvents:UIControlEventTouchUpInside];
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
